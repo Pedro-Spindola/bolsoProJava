@@ -9,6 +9,7 @@ import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -52,6 +53,9 @@ public class HomeController implements Initializable {
 
             // Vincula a lista de contas ao TableView
             tableView.setItems(FXCollections.observableArrayList(sistema.getContas()));
+            tableView.getSelectionModel().clearSelection();
+            tableView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
+            tableView.setEditable(false); // Para garantir que a tabela não esteja editável
             tableView.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
         } catch(Exception erro){
             System.out.println(erro.getMessage());

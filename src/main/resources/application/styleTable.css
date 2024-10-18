@@ -1,0 +1,38 @@
+/* 
+    Created on : 17 de out. de 2024, 22:24:04
+    Author     : Pedro Spindola
+*/
+/* style.css */
+
+/* Estilizando a TableView */
+.table-view {
+    -fx-background-color: #EAE6E5; /* Cor de fundo da tabela */
+    -fx-border-color: #EAE6E5; /* Cor da borda */
+    -fx-border-width: 0; /* Largura da borda */
+    -fx-text-fill: #12130F;
+}
+
+/* Estilizando o cabeçalho da tabela */
+.table-view .table-header {
+    -fx-pref-height: 0; /* Define a altura do cabeçalho como zero */
+    -fx-background-color: transparent; /* Torna o fundo do cabeçalho transparente */
+    -fx-border-color: transparent; /* Remove a borda do cabeçalho */
+    -fx-opacity: 0; /* Oculta a visibilidade do cabeçalho */
+}
+
+/* Estilizando as linhas da tabela */
+.table-view .table-row-cell {
+    -fx-background-color: #EAE6E5; /* Cor de fundo das linhas */
+}
+
+/* Estilizando as linhas da tabela quando selecionadas */
+.table-view .table-row-cell:selected {
+    -fx-background-color: transparent; /* Cor de fundo quando selecionada */
+    -fx-text-fill: #12130F; /* Cor do texto quando selecionada */
+}
+
+.table-view .table-row-cell:selected .text {
+    -fx-text-fill: #12130F; /* Cor do texto para garantir que não fique em branco */
+}
+
+
