@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f2ebe6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <TextField fx:id="usuario" layoutX="40.0" layoutY="160.0" prefHeight="30.0" prefWidth="500.0" style="-fx-border-color: #c6a58b; -fx-border-radius: 8; -fx-background-radius: 8; -fx-background-color: #FDFCFC; -fx-border-width: 1;" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="220.0" layoutY="40.0" prefHeight="30.0" prefWidth="160.0" text="TELA DE LOGIN" textAlignment="CENTER">
+         <font>
+            <Font name="Poppins SemiBold" size="18.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="50.0" layoutY="140.0" prefHeight="20.0" prefWidth="160.0" text="Usuário">
+         <font>
+            <Font name="Poppins Bold" size="12.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="50.0" layoutY="220.0" prefHeight="20.0" prefWidth="160.0" text="Senha">
+         <font>
+            <Font name="Poppins Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonLogin" layoutX="200.0" layoutY="320.0" mnemonicParsing="false" onAction="#loginButtonClicked" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #c6a58b; -fx-background-radius: 8; -fx-border-color: transparent;" text="Login">
+         <font>
+            <Font name="Poppins Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelError" contentDisplay="CENTER" layoutX="50.0" layoutY="275.0" prefHeight="20.0" prefWidth="490.0" style="-fx-text-fill: #c35355;">
+         <font>
+            <Font name="Poppins Regular" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/logoBolsoPro.png" />
+         </image></ImageView>
+      <PasswordField fx:id="senha" layoutX="40.0" layoutY="240.0" prefHeight="30.0" prefWidth="500.0" style="-fx-border-color: #c6a58b; -fx-background-color: #FDFCFC; -fx-background-radius: 8; -fx-border-radius: 8; -fx-border-image-width: 1;" />
+      <Button fx:id="buttonFechar" layoutX="570.0" layoutY="10.0" mnemonicParsing="false" onAction="#fecharJanelaButtonClicked" prefHeight="20.0" prefWidth="20.0" text="X" textAlignment="CENTER" />
+   </children>
+</AnchorPane>
