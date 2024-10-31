@@ -1,0 +1,79 @@
+/* 
+    Created on : 30 de out. de 2024, 18:59:16
+    Author     : Pedro Spindola
+*/
+.main{
+    -fx-background-color: #F9F8F8;
+}
+
+.input{
+    -fx-background-color: #EAE6E5;
+    -fx-text-fill: #12130F;
+    -fx-border-color: #12130F;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+
+.buttonPositivo {
+    -fx-background-color: #3F8A68;
+    -fx-text-fill: #EAE6E5;
+    -fx-border-color: transparent; 
+    -fx-border-width: 0;
+    -fx-background-radius: 4;
+}
+
+.buttonNegativo {
+    -fx-background-color: #B23A48;
+    -fx-text-fill: #EAE6E5;
+    -fx-border-color: transparent; 
+    -fx-border-width: 0;
+    -fx-background-radius: 4;
+}
+
+.checkBox {
+    -fx-background-radius: 4;
+    -fx-mark-color: #12130F;
+}
+
+.checkBox .box {
+    -fx-border-color: #12130F;
+    -fx-border-radius: 5;
+    -fx-background-color: #EAE6E5;
+}
+
+.text-area .content {
+    -fx-background-color: #EAE6E5;
+}
+.text-area {
+    -fx-background-color: #12130F;
+    -fx-text-fill: #12130F;
+    -fx-border-color: #12130F;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-border-width: 0;
+}
+
+.date-picker {
+    -fx-background-color: #EAE6E5;
+    -fx-text-fill: #12130F;
+    -fx-border-color: #12130F;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+
+.date-picker .text-field {
+    -fx-background-color: #EAE6E5;
+    -fx-text-fill: #12130F;
+}
+
+.date-picker .arrow-button {
+    -fx-border-radius: 0;
+}
+
+.date-pickerPositivo .arrow-button .arrow {
+    -fx-background-color: #3F8A68;
+}
+
+.date-pickerNegativo .arrow-button .arrow {
+    -fx-background-color: #B23A48;
+}

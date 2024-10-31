@@ -13,6 +13,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import model.Sistema;
 import model.SistemaLogin;
 import model.Usuario;
 
@@ -38,11 +39,15 @@ public class LoginController implements Initializable {
     @FXML
     private void loginButtonClicked(ActionEvent event){
         try{
+            Sistema sistema = App.getSistema();
             String usuarioInput = usuario.getText();
             String senhaInput = senha.getText();
             boolean autenticado = false;
             for (Usuario user : sistemaLogin.listarUsuarios()) {
-                if (user.getNome().equals(usuarioInput) && user.getSenha().equals(senhaInput)) autenticado = true; break;
+                if (user.getNome().equals(usuarioInput) && user.getSenha().equals(senhaInput)){
+                    autenticado = true;
+                    sistema.setUsuario(user);
+                } break;
             }
             if (autenticado){
                 labelError.setText("Login autenticado, entrando...");
@@ -68,7 +73,7 @@ public class LoginController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         try{
             sistemaLogin = new SistemaLogin();
-            sistemaLogin.adicionarUsuario(new Usuario("pedro@gmail.com", "12345678", "Pedro"));         
+            sistemaLogin.adicionarUsuario(new Usuario("pedro@gmail.com", "12345678", "Pedro Spíndola"));
         } catch(Exception erro){
             System.out.println(erro.getMessage());
         }

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="420.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TrasacaoDeContasController">
+   <children>
+      <Label alignment="CENTER" layoutX="175.0" layoutY="6.0" prefHeight="35.0" text="Transferencia entre Contas" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="95.0">
+         <font>
+            <Font name="Verdana Bold" size="12.0" />
+         </font></Label>
+      <Pane layoutX="27.0" layoutY="50.0" prefHeight="10.0" prefWidth="200.0" style="-fx-background-color: #8F8073;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="130.0" />
+      <Pane layoutX="37.0" layoutY="60.0" prefHeight="6.0" prefWidth="200.0" style="-fx-background-color: #EAE6E5;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <ComboBox layoutX="120.0" layoutY="165.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #EAE6E5; -fx-border-color: #8F8073; -fx-border-radius: 4; -fx-background-radius: 4;" />
+      <ComboBox layoutX="480.0" layoutY="165.0" prefWidth="200.0" style="-fx-background-color: #EAE6E5; -fx-border-color: #8F8073; -fx-border-radius: 4; -fx-background-radius: 4;" />
+      <Label layoutX="125.0" layoutY="150.0" prefHeight="15.0" prefWidth="200.0" text="DE:">
+         <font>
+            <Font name="Verdana" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="485.0" layoutY="150.0" prefHeight="15.0" prefWidth="200.0" text="PARA:">
+         <font>
+            <Font name="Verdana" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="125.0" layoutY="210.0" prefHeight="15.0" prefWidth="200.0" text="VALOR:">
+         <font>
+            <Font name="Verdana" size="10.0" />
+         </font>
+      </Label>
+      <TextField layoutX="120.0" layoutY="225.0" prefHeight="25.0" prefWidth="560.0" style="-fx-background-color: #EAE6E5; -fx-border-color: #8F8073; -fx-border-radius: 4; -fx-background-radius: 4;" />
+      <Button layoutX="320.0" layoutY="290.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="160.0" style="-fx-background-color: #8F8073; -fx-text-fill: #F9F8F8;" text="Realizar Transação">
+         <font>
+            <Font name="Verdana Bold" size="12.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="21.0" layoutY="255.0" prefHeight="30.0" prefWidth="227.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="255.0" />
+      <Pane layoutX="47.0" layoutY="70.0" prefHeight="6.0" prefWidth="200.0" style="-fx-background-color: #EAE6E5;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Button fx:id="buttonClose" layoutX="769.0" layoutY="14.0" maxHeight="20.0" mnemonicParsing="false" onAction="#fecharJanelaButtonClicked" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: #12130F; -fx-text-fill: #EAE6E5;" text="X" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="Verdana Bold" size="10.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

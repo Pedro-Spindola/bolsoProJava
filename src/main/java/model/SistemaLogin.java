@@ -3,7 +3,6 @@ import java.util.ArrayList;
 import java.util.List;
 import model.Usuario;
 import model.Conta;
-import model.IConta;
 /**
  *
  * @author Pedro Spindola

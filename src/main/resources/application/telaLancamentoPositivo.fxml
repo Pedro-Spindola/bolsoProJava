@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="800.0" styleClass="main" stylesheets="@../styles/styleLancamentos.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LancamentoPositivoController">
+   <children>
+      <Button layoutX="530.0" layoutY="335.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" styleClass="buttonPositivo" text="Adicionar">
+         <font>
+            <Font name="Verdana Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonClose" layoutX="568.0" layoutY="5.0" maxHeight="20.0" mnemonicParsing="false" onAction="#fecharJanelaButtonClicked" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: #12130F; -fx-text-fill: #EAE6E5;" text="X" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="Verdana Bold" size="10.0" />
+         </font>
+      </Button>
+      <TextField layoutX="120.0" layoutY="170.0" prefHeight="25.0" prefWidth="220.0" styleClass="input" />
+      <TextField layoutX="120.0" layoutY="230.0" prefHeight="25.0" prefWidth="220.0" styleClass="input" />
+      <ComboBox layoutX="360.0" layoutY="170.0" prefHeight="25.0" prefWidth="150.0" styleClass="input" />
+      <CheckBox layoutX="530.0" layoutY="170.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" styleClass="checkBox" text="Debito">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </CheckBox>
+      <TextArea layoutX="120.0" layoutY="290.0" prefHeight="75.0" prefWidth="390.0" styleClass="text-area" wrapText="true" />
+      <Label alignment="CENTER" prefHeight="35.0" prefWidth="600.0" text="Lançamento de Receita" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="55.0">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="125.0" layoutY="150.0" prefHeight="20.0" prefWidth="180.0" text="DESCRIÇÃO:">
+         <font>
+            <Font name="Verdana" size="10.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="360.0" layoutY="230.0" prefWidth="150.0" styleClass="input" />
+      <ComboBox layoutX="530.0" layoutY="230.0" prefWidth="150.0" styleClass="input" />
+      <Label layoutX="125.0" layoutY="210.0" prefHeight="20.0" prefWidth="180.0" text="VALOR:">
+         <font>
+            <Font name="Verdana" size="10.0" />
+         </font>
+      </Label>
+      <CheckBox layoutX="610.0" layoutY="170.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" styleClass="checkBox" text="Credito">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="125.0" layoutY="270.0" prefHeight="20.0" prefWidth="180.0" text="OBSERVAÇÃO:">
+         <font>
+            <Font name="Verdana" size="10.0" />
+         </font>
+      </Label>
+      <Pane layoutX="30.0" layoutY="36.0" prefHeight="10.0" prefWidth="200.0" style="-fx-background-color: #3F8A68;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="90.0" />
+      <Pane layoutX="140.0" layoutY="150.0" prefHeight="6.0" prefWidth="200.0" style="-fx-background-color: #8FCB9B;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane layoutX="50.0" layoutY="56.0" prefHeight="6.0" prefWidth="200.0" style="-fx-background-color: #8FCB9B;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Label layoutX="365.0" layoutY="210.0" prefHeight="20.0" prefWidth="150.0" text="CATEGORIA:">
+         <font>
+            <Font name="Verdana" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="535.0" layoutY="210.0" prefHeight="20.0" prefWidth="150.0" text="SUB-CATEGORIA:">
+         <font>
+            <Font name="Verdana" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="365.0" layoutY="150.0" prefHeight="20.0" prefWidth="150.0" text="CONTA:">
+         <font>
+            <Font name="Verdana" size="10.0" />
+         </font>
+      </Label>
+      <DatePicker layoutX="530.0" layoutY="290.0" prefHeight="25.0" prefWidth="150.0" styleClass="date-pickerPositivo" />
+      <Label layoutX="535.0" layoutY="270.0" prefHeight="20.0" prefWidth="150.0" text="DATA:">
+         <font>
+            <Font name="Verdana" size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
